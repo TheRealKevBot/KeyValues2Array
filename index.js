@@ -1,5 +1,9 @@
 function objectToArray(obj) {
-	
+    let arr = []
+	for ([key, val] of Object.entries(obj)) {
+        arr.push([key, val])
+    }
+    return arr
 } 
 
 console.log(objectToArray({
